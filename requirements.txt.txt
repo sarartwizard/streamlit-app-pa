@@ -1,15 +1,14 @@
 streamlit
-from json import encoder
-import streamlit as st
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.utils import to_categorical
-from tensorflow.python.keras import optimizers
-from sklearn.preprocessing import OrdinalEncoder
-import matplotlib.pyplot as plt
-from tensorflow.python.keras.models import model_from_json
-from sklearn import preprocessing
+json
+streamlit
+pandas
+sklearn.ensemble
+sklearn.model_selection
+numpy
+tensorflow
+tensorflow.keras.utils
+tensorflow.python.keras
+sklearn.preprocessing
+matplotlib.pyplot
+tensorflow.python.keras.models
+sklearn
