@@ -103,12 +103,12 @@ st.subheader('entre 8 et 10 -> Tout le temps')
 st.write(df)
 
 # charger le modele pour faire des prédictions sur des nouvelles données
-json_file = open("model_MLPCLASSIFER"+".json", 'r')
+json_file = open("C:/Users/nadou/PycharmProjects/pythonProject6/streamlit-app-pa/model_MLPCLASSIFER.json", 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 model = model_from_json(loaded_model_json)
 # load weights into new model
-model.load_weights("model_MLPCLASSIFER"+".h5")
+model.load_weights("C:/Users/nadou/PycharmProjects/pythonProject6/streamlit-app-pa/model_MLPCLASSIFER.h5")
 print(" -------  The model is  loaded from disk  -------")
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 
@@ -133,9 +133,9 @@ Xnew = nmp
 ynew = model.predict(Xnew)
 print (ynew)
 ynew = np.argmax(ynew, axis= 1)
-res = encoder.inverse_transform(np.array([3]).reshape(1, -1))
 
-st.write(res)
+
+st.write(ynew)
 
 # depression = pd.read_excel('C:/Users/nadou/OneDrive/Documents/Depression.xlsx')
 # rfc = RandomForestClassifier(n_estimators=100)
